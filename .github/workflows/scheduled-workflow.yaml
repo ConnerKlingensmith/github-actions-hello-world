@@ -1,0 +1,14 @@
+name: Schedule Workflow
+
+on:
+  schedule:
+    - cron: '0 9 * * *'
+
+jobs:
+  job1:
+    - name: Print Hello
+      run: echo "Hello"
+
+    - name: Print Goodbye
+      run: echo "Goodbye"
+
