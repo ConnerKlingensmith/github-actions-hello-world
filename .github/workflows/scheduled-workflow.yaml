@@ -6,9 +6,13 @@ on:
 
 jobs:
   job1:
-    - name: Print Hello
-      run: echo "Hello"
+    name: first Job
+    runs-on: ubuntu-latest
 
-    - name: Print Goodbye
-      run: echo "Goodbye"
+    steps:
+      - name: Print Hello
+        run: echo "Hello"
+
+      - name: Print Goodbye
+        run: echo "Goodbye"
 
